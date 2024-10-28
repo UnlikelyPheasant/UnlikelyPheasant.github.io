@@ -1,0 +1,315 @@
+/** default styles for the page */
+body {
+  Font-family: 'Unbounded', Helvetica, Arial, sans-serif;
+  width: 100%;
+  margin: 0;
+  color: #000000;
+  line-height: 2;
+}
+h2{
+  margin: .5em;
+  padding: 0.2em;
+  font-size: 150%;
+} 
+h3 {
+  margin: .5em;
+  padding: 0.2em 0;
+  font-size: 130%;
+}
+p {
+  font-family: 'Helvetica';
+  font-size: 110%;
+  margin: 1em 5em;
+  padding: 0.2em;
+}
+
+/* Style the navbar */
+#navbar {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background: #5C0000;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+#navbar a:hover, a:focus {
+  font-size: 100%;
+  font-weight: 900;
+} 
+ /** Styles for the Header */
+header {
+  background-color: #5C0000;
+  background-image: url("../images/wave.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #ffffff;
+  width: 100%;
+  padding: 4em 0 8em 1em;
+}
+h1 {
+  color: #ffffff;
+  font-size: 450%;
+  font-weight:900;
+  margin: 0 .2em .2em .2em;
+}
+
+/** styles for the home/intro section of the page */
+#intro h2 {
+  text-align: center; 
+  width: 65%; 
+  margin: auto; 
+  padding-top: 3em;
+}
+#p {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 4em;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0;
+  padding: 0;
+}
+.container_text {
+  padding: 2em 2em .2em 2em;
+}
+.container2_text {
+  padding: .2em 2em 2em .5em;
+}
+
+/** styles for the section of the page on WCAG */
+#WCAG {
+  background-color: #5C0000;
+  background-image: url("../images/wave.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: fit-content ;
+}
+#WCAG section {
+  margin: auto;
+  width: 74%;  
+  text-align: center;
+  color: #ffffff;
+  padding: 5em 0;
+}
+.level {
+  font-weight: 600;
+}
+ul {
+  list-style: none;
+  line-height: 2.5;
+  font-weight: 600;
+}
+li {
+  font-weight: lighter;
+}
+
+/** styles for the section on the Pour Principles */
+#POUR{ 
+  width: 80% !important;
+  margin-left: auto;
+  margin-right: auto !important;
+  padding-bottom: 5em;
+  float: none;
+  }
+#POUR h2 {
+  padding-top: 1em;
+}
+.accordion {
+  background-color: #ffffff;
+  font-size: 100%;
+  font-weight: 600;
+  cursor: crosshair;
+  padding: 18px;  
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+.accordion i {
+  color: #A80000;
+  float: right;
+}
+.active {
+  color: #A80000;
+  font-size: 115%;
+  font-weight: 900;
+  border: 3px solid #000000;
+}
+.accordion:hover {
+  animation: 
+    bounce 400ms 
+    alternate 
+    cubic-bezier(.2, .65, .6, 1);
+    animation-iteration-count: 10;
+}
+.tab_content {
+  padding: 0 18px;
+  background-color: #fafafa;
+  display: none;
+  overflow: hidden;
+  text-align: left;
+}
+.tab_content p {
+  margin-left: auto;
+}
+
+/** styles for the section on testing tools */
+#testing {
+  text-align: center;
+  background-color: #fafafa;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.tools {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  column-gap: 2em;
+  row-gap: 2em;
+  width: 80%;
+  margin: auto;
+  padding: 8em;
+}
+.tool {
+  width: 80%;
+  padding: .5em;
+  margin: auto;
+  text-align: center;
+}
+.tool p {
+  margin: 0;
+}
+.image {
+  background-color: white;
+  width: 10vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10%;
+}
+.tool img {
+  width: 5vw;
+  display: block;
+  padding: 2em 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tool a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+}
+.tool a:hover {
+  cursor: pointer;
+}
+.tool a:visited {
+  color: #c00000;
+}
+
+/** styles for the about me section */
+#about_me {
+  width: 60%;
+  margin: auto;
+  padding: 5em;
+}
+#about_me h2 {
+  text-align: center;
+}
+
+#about_me_text {
+  float: right;
+  width: 69%;
+}
+#about_me_text p {
+  margin-left: .8em;
+  margin-top: 0;
+}
+#about_me_text i {
+  font: normal normal normal 14px / 1 FontAwesome;
+  padding: .18em;
+  color: #A80000;
+
+}
+#about_me_text i:hover {
+  will-change: transition;
+  animation: 
+  bouncey 300ms 
+    alternate infinite 
+    cubic-bezier(.2, .65, .6, 1) 0.3s;
+}
+#headshot {
+  float: left;
+  margin: 0 1.5em;
+}
+#interests {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  column-gap: 2em;
+  row-gap: 2em;
+  width: 100%;
+  padding: 1em;
+}
+.interest ul {
+  list-style:disc;
+  line-height: 1.6;
+}
+.social {
+  width: 6px;
+}
+
+/** styles for the footer */
+footer {
+  background-color: #5C0000;
+  background-image: url("../images/wave.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  color: #ffffff;
+  padding: 2em;
+}
+footer p {  
+  Font-family: 'Unbounded', Helvetica, Arial, sans-serif;
+  margin-left: 5em;
+  padding: .5em;
+}
+#footer1 {
+  font-size: 65%;
+}
+
+/** animation keyframes */
+@keyframes bounce { /*horizontal bounce */
+  from {
+    transform: translate(0px);
+  }
+  to {
+    transform: translate(-20px);
+  }
+}
+@keyframes bouncey {  /*vertical bounce */
+  from {
+    transform: translate(0px);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #about_me_text i:hover {
+    animation: none;
+  }
+  .accordion:hover  {
+    animation: none;
+  }
+}

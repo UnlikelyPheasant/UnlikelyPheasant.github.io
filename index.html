@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Accessible Web Design</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <a id="home" href="#intro">Home</a>
+        <a id="wcag" href="#WCAG">WCAG</a>
+        <a id="pour" href="#POUR">POUR</a>
+        <a id="test" href="#testing">Testing Tools</a>
+        <a id="about" href="#about_me">About Me</a>
+    </nav>
+    <header>
+        <h1>Accessible Web Design</h1>
+        <h2 aria-hidden="true" style="font-size: 100%;">This page is meant to highlight the importance of web accessiblity.</h2>
+        </header>
+    <main>
+        <div id="intro">
+            <div>
+                <h2>An Introduction to Web Accessiblity</h2>
+                <p id="p"> Over 7 million people globally (about twice the population of Oklahoma) use a screen reader to make accessing the web possible.
+                    Whithout certain functionalities coded into a web page accessiblity tools like screen readers woudl be rendered useless. 
+                    Web accessiblity is about making the web accessible to everyone no matter of ability or disability.
+                </p>
+            </div>
+            <div class="container">
+                <div>
+                <img src="images/program.jpg" alt="A close up of a computer screen with a program visible" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div>
+                <h3 class="container_text">Why Should You Care About Web Accessiblity?</h3>
+                <p class="container2_text">Web accessibility is not only intended to help people with disabilities it is for everyone,
+                    from a user that prefers using a keyboard because it is more efficient for them to users who are 
+                    blind, deaf, have memory issues, and other disabilities. The bottom line is accessibility matters for everyone. 
+                    Of course there is the fact that there are legal consequences for not meeting these accessibility standards, which is important, 
+                    however I think instead the focus should be on ensuring that everyone can have the same experience when accessing a web page.</p>
+                </div>
+            </div>
+            <div class="container" >
+                <div>
+                    <h3 class="container_text">What are common challenges for users?</h3>
+                    <p class="container2_text">There are many people who live with low vision issues like Cataracts, Macular degeneration, 
+                        Glaucoma, even color blindness can be an issue when it comes to interacting with a web pages. 
+                        Low vision issues like these would make such things like a low contrast ratio even worse, 
+                        which would mean they are not getting the same experience as someone who does not experience any or even minor vision issues. 
+                        The same goes for users with amputations, hard of hearing, developmental disorders, and neurodivergence, all of these disabilities can make 
+                        interacting with a web page challenging.
+                </p>
+                </div>
+                <div>
+                    <img src="images/circuit.jpg" alt="A close up of a black circuit board" style=" width: 100%; float: right; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+        <div id="WCAG">
+            <section>
+                <h2>What is WCAG?</h2>
+                <p>The Web Content Accessibility Guidelines is a set of standards that was designed to make the web more accessible to web users with disabilities. 
+                    The WCAG standard is published by the W3C (World Wide Web Consortium) and WAI (Web Accessibility Initiative).</p>
+                <h3>History of WCAG</h3>
+                <p>The WCAG standard 1.0 was created in 1999, it included 14 guidelines that included 10 checkpoints for each guideline. 
+                    This first version included levels of conformance as well as guidelines like ones that required text alternatives.
+                    In 2008 WCAG 2.0 was released which broadened and redefined the scope of previous guidelines to account for rapidly growing technology. 
+                    Version 2.0 introduced the four guideing principles of accessibility know as the POUR principles.
+                    WCAG 2.1 was released a decade later in 2018. Version 2.1 made several additions to it to version 2.0. 
+                </p>
+                <h3>Levels of Conformance</h3>
+                <ul>
+                    <li class="level">Level A
+                        <ul>
+                            <li>The minimum level of conformance, accounts for basic accessibility needs.</li>
+                        </ul>
+                    </li>
+                    <li class="level">Level AA
+                        <ul>
+                            <li>This higher level includes all level A conformance criteria as well as additional criteria for more inclusive accessibility needs.</li>
+                        </ul>
+                    </li>
+                    <li class="level">Level AAA
+                        <ul>
+                            <li>This is the current highest level of conformance, includes all level A and level AA conformance as well as additional criteria.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Guidelines and Success Criteria</h3>
+                <p>Under the WCAG 2.1 standard and the four principles of accessibility are 13 guidelines that provide basic goals that as 
+                    developers we should be working towards meeting. When these guidelines are met it ensures a more accessible web page for users with disabilities. 
+                    However, these guidelines are not testable, They are more of a set of objectives or a framwork. That is where the success criteria comes in.
+                    For each guideline there are success criteria that are provided for a testable criteria to the guidelines. 
+                    Each success criteria is assigned to a level of conformance based on a few factors: how essential it is, 
+                    how possible it is for all websites and types of content to meet it, and how reasonable the skill level required is.
+                    </p>
+            </section>
+        </div>
+        <div id="POUR">
+            <h2>What are POUR Principles</h2>
+            <p>The POUR principles are the four guideing principles set out by the WCAG accessibility standard.</p>
+                <button class="accordion">Perceivable <i class="fa-sharp fa-solid fa-chevron-down"></i></button>
+                <div  class="tab_content">
+                    <p>The P in the POUR acronym stands for percievable, meaning that a user needs to be able to percieve the content in your page through at least one of thier senses (sight, sound, or touch). 
+                        There are many accessibility tools that enable users to interact with the web, and as developers we are responsible for making our webpages accessible to be used with an accessibility tool.
+                    </p>
+                    <h3>Example Problems</h3>
+                    <ul> 
+                        <li>Low contrast elements</li>
+                        <li>Images</li>
+                        <li>Audio content</li>
+                    </ul>
+                    <h3>Potential Solutions</h3>
+                    <ul>
+                        <li>Ensure the contrast of text and graphical elements meets WCAG contrast ratio requirements.</li>
+                        <li>Provide descriptive alternative text for all images and graphics.</li>
+                        <li>Provide captioning for all audio elements present on the page.</li>
+                    </ul>
+                </div>
+                <button class="accordion">Operable <i class="fa-sharp fa-solid fa-chevron-down"></i></button>
+                <div  class="tab_content">
+                    <p>The O in the POUR acronym stands for operable. All interactive elements on a web page need to be accessible to multiple different tools not just a keyboard and mouse.</p>
+                    <h3>Example Problems</h3>
+                    <ul>
+                        <li>A user with a screen reader is never able to get to the main content</li>
+                        <li>An accordion element is unaccessible</li>
+                    </ul>
+                    <h3>Potential Solutions</h3>
+                    <ul>
+                        <li>Add a "skip to Main" button</li>
+                        <li>Ensure elements like accordions and tab structures a tab accessible</li>
+                    </ul>
+                </div>
+                <button class="accordion">Understandable <i class="fa-sharp fa-solid fa-chevron-down"></i></button>
+                <div  class="tab_content">
+                    <p>The U in the POUR acronym stands for Understandable. The content within a page should be Understandable for a large audience of users. 
+                        The user must be able to easily understand how the website functions, and be able to know where they are on the page.</p>
+                    <h3>Example Problems</h3>
+                    <ul>
+                        <li>A user does not know what an acronym means</li>
+                        <li>A user with a learning disability has a dificult time focusing and understanding</li>
+                        <li>A user uses an in page link and is unable to easily return or see what area of the page they are on</li>
+                    </ul>
+                    <h3>Potential Solutions</h3>
+                    <ul>
+                        <li>Always explain and industry specific terms or acronyms</li>
+                        <li>Keep reading level around 8th or 9th grade reading level, and provide summaries of complicated or long topics</li>
+                        <li>Make it clear on every page where the user is located.</li>
+                    </ul>
+                </div>
+                <button class="accordion">Robust <i class="fa-sharp fa-solid fa-chevron-down"></i></button>
+                <div  class="tab_content">
+                    <p> The R in the POUR acronym stands for robust, this means that the web page should be compatable and usable with assistive technology, different browsers, 
+                        previous versions of browsers, different operating systems, and different types of devices like tablets and mobile phones.</p>
+                    <h3>Example Problems</h3>
+                    <ul>
+                        <li>An elderly user on an older pc and outdate internet browser is unable to use a web page</li>
+                        <li>A user on an iphone has a difficult time trying to read the content on a page</li>
+                    </ul>
+                    <h3>Potential Solutions</h3>
+                    <ul>
+                        <li>Ensure that the function and structures of your page are not dependent on newer technology that is not backward compatable.</li>
+                        <li>Refrain form using fixed sizing for elements, and set styles for different viewports</li>
+                    </ul>
+                </div>
+        </div>
+        <div id="testing">
+            <h2>Accessiblity Testing Tools</h2>
+            <p>These are just a few tools that can be used to check accessibility conformance during development.</p>
+            <section class="tools">
+                <div class="tool">
+                    <div class="image">
+                        <img src="images/chrome.jpg" alt="Logo for chrome">
+                    </div>
+                    <div>
+                        <h3>Chrome Developer Tools</h3>
+                        <p>This tool is natively a part the chrome web browser and can be open by pressing f12.</p> <br>
+                    </div>
+                </div>
+                <div class="tool">
+                    <div class="image">
+                        <img src="images/webaim.jpg" alt="Logo for Web Aim">
+                    </div>
+                    <div>
+                        <h3>WebAIM Contrast Checker</h3>
+                        <p>This is an excellent tool for ensuring the colors you plan to use meet minimum contrast requirements</p>
+                        <a href="https://webaim.org/resources/contrastchecker/" target="_blank"> WebAIM Contrast Checker</a>
+                    </div>
+                </div>
+                <div class="tool">
+                    <div class="image">
+                        <img src="images/siteimprove.png" alt="Logo for Siteimprove">
+                    </div>
+                    <div>
+                        <h3>Siteimprove</h3>
+                        <p>This web extension tool scans webpages for accessibility issues and shows how your page looks to a color blind person.</p>
+                        <a href="https://www.siteimprove.com/integrations/browser-extensions/" target="_blank">Siteimprove</a>
+                    </div>
+                </div>
+                <div class="tool">
+                    <div class="image">
+                        <img src="images/WAVEeval.jpg" alt="Logo for WAVE">
+                    </div>
+                    <div>
+                        <h3>WAVE Evaluation Tool</h3>
+                        <p>This is another tool that will scan a web page for accessibility issues as well as show you a summary breakdown of the elements present on the page.</p>
+                        <a href="https://wave.webaim.org/extension/" target="_blank">Wave Evaluation Tool</a>
+                    </div>
+                </div>
+                <div class="tool">
+                    <div class="image">
+                        <img src="images/axe.png" alt="Logo for Axe">
+                    </div>
+                    <div>
+                        <h3>Axe Developer Tools</h3>
+                        <p>Once this extension tool is added to chrome it integrates with the native chrome dev tool to provide a more extesive scan of the page.</p><br>
+                        <a href="https://www.deque.com/axe/devtools/" target="_blank">Axe Developer Tool</a>
+                    </div>
+                </div>
+                <div class="tool">
+                    <div class="image">
+                        <img src="images/NVDA.png" alt="Logo for NDA">
+                    </div>
+                    <div>
+                        <h3>NVDA Screen Reader</h3>
+                        <p> This tool is a screen reader that should be used by developers to ensure thier web pages a usable with a screen reader.</p><br>
+                        <a href="https://www.nvaccess.org/download/" target="_blank">NVDA Screen Reader</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="about_me">
+            <h2>About Me</h2>
+            <img src="images/headshot.jpg" id="headshot" alt="A headshot of the page creator" height="350px">
+            <div id="about_me_text">
+                <h3>Ash Burks 
+                    <a href="https://www.linkedin.com/in/ash-burks/" target="_blank"><i class="fa" style=" font-size: 24px;"><span class="background">&#xf08c;</span></i></a>
+                    <a href="https://github.com/UnlikelyPheasant" target="_blank"><i class="fa" style=" font-size: 24px;"><span class="background">&#xf09b;</span></i></a>
+                </h3>                                                                       
+                <p>I am a Florida based web developer and programmer.
+                    My current position is as a web assistant at the University of Florida Information Technology. <br>
+                    I hope to develop a signature style of aesthetic and accessible websites that combine unique artistic flair and a mindfullnes for all users.</p>
+                <p></p>
+                <h3>Education</h3>
+                <p>Santa Fe College <br>
+                    A.S Programming and Analysis <br>
+                    Expected Graduation: 2025
+                </p>
+            </div>
+            <section id="interests">
+                <div class="interest">
+                    <h3>Professional Interests</h3>
+                    <ul>
+                        <li>I am learning some simple animation skills like GLSL (OpenGL Shading language)</li>
+                        <li>I am learning several JavaScript libraries</li>
+                        <li>I am very interested in various game design aspects</li>
+                    </ul>
+                </div>
+                <div class="interest">
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Reading Fantasy novels</li>
+                        <li>Sculpting</li>
+                        <li>Hiking</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>2024 Ash Burks</p>
+        <p id="footer1">Built with HTML and CSS</p>
+    </footer>
+    <script>
+        var $ = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < $.length; i++) {
+        $[i].addEventListener("click", function() {
+
+            this.classList.toggle("active");
+
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+
+                this.querySelector('i').classList.remove('fa-chevron-up');
+                this.querySelector('i').classList.add('fa-chevron-down');
+            } else {
+            panel.style.display = "block";
+
+            this.querySelector('i').classList.remove('fa-chevron-down');
+            this.querySelector('i').classList.add('fa-chevron-up');
+            }
+        });
+        }
+  /**     
+    *        onscroll="highlight(pour)"
+    *        highlight = (id) => {
+            document.getElementById(id).style.add("font-size: 110% font-weight: 900;");
+        } **/
+    </script>
+</body>
+</html>
