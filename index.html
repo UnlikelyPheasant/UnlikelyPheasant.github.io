@@ -56,7 +56,7 @@
                 </p>
                 </div>
                 <div>
-                    <img src="images/circuit.jpg" alt="A close up of a black circuit board" style=" width: 100%; float: right; object-fit: cover;">
+                    <img src="images/circuit.jpg" alt="A close up of a black circuit board" style=" width: 100%; height: 100%; float: right; object-fit: cover;">
                 </div>
             </div>
         </div>
@@ -235,22 +235,27 @@
         </div>
         <div id="about_me">
             <h2>About Me</h2>
-            <img src="images/headshot.jpg" id="headshot" alt="A headshot of the page creator" height="350px">
-            <div id="about_me_text">
-                <h3>Ash Burks 
-                    <a href="https://www.linkedin.com/in/ash-burks/" target="_blank"><i class="fa" style=" font-size: 24px;"><span class="background">&#xf08c;</span></i></a>
-                    <a href="https://github.com/UnlikelyPheasant" target="_blank"><i class="fa" style=" font-size: 24px;"><span class="background">&#xf09b;</span></i></a>
-                </h3>                                                                       
-                <p>I am a Florida based web developer and programmer.
-                    My current position is as a web assistant at the University of Florida Information Technology. <br>
-                    I hope to develop a signature style of aesthetic and accessible websites that combine unique artistic flair and a mindfullnes for all users.</p>
-                <p></p>
-                <h3>Education</h3>
-                <p>Santa Fe College <br>
-                    A.S Programming and Analysis <br>
-                    Expected Graduation: 2025
-                </p>
-            </div>
+            <p style="text-align: center;">Here is a little bit about me and my goals as a web developer.</p>
+            <section id="bioContainer">
+                <div id="headshotContainer">
+                <img src="images/headshot.jpg" id="headshot" alt="A headshot of the page creator" width="75%">
+                </div>
+                <div id="about_me_text">
+                    <h3>Ash Burks 
+                        <a href="https://www.linkedin.com/in/ash-burks/" target="_blank"><i class="fa" style=" font-size: 24px;"><span class="background">&#xf08c;</span></i></a>
+                        <a href="https://github.com/UnlikelyPheasant" target="_blank"><i class="fa" style=" font-size: 24px;"><span class="background">&#xf09b;</span></i></a>
+                    </h3>                                                                       
+                    <p>I am a Florida based web developer and programmer.
+                        My current position is as a web assistant at the University of Florida Information Technology. <br>
+                        I hope to develop a signature style of aesthetic and accessible websites that combine unique artistic flair and a mindfullnes for all users.</p>
+                    <p></p>
+                    <h3>Education</h3>
+                    <p>Santa Fe College <br>
+                        A.S Programming and Analysis <br>
+                        Expected Graduation: 2025
+                    </p>
+                </div>
+            </section>
             <section id="interests">
                 <div class="interest">
                     <h3>Professional Interests</h3>
@@ -298,11 +303,6 @@
             }
         });
         }
-  /**     
-    *        onscroll="highlight(pour)"
-    *        highlight = (id) => {
-            document.getElementById(id).style.add("font-size: 110% font-weight: 900;");
-        } **/
     </script>
 </body>
 </html>

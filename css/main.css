@@ -2,9 +2,9 @@
 body {
   Font-family: 'Unbounded', Helvetica, Arial, sans-serif;
   width: 100%;
-  margin: 0;
   color: #000000;
   line-height: 2;
+  margin: 0;
 }
 h2{
   margin: .5em;
@@ -52,7 +52,6 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #ffffff;
-  width: 100%;
   padding: 4em 0 8em 1em;
 }
 h1 {
@@ -226,7 +225,14 @@ li {
 #about_me h2 {
   text-align: center;
 }
-
+#bioContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 2em;
+  row-gap: 2em;
+  width: 100%;
+  padding: 1em;
+}
 #about_me_text {
   float: right;
   width: 69%;
@@ -239,7 +245,6 @@ li {
   font: normal normal normal 14px / 1 FontAwesome;
   padding: .18em;
   color: #A80000;
-
 }
 #about_me_text i:hover {
   will-change: transition;
